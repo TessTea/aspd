@@ -43,7 +43,6 @@ aws_region = ********
 [profile_2]
 aws_access_key_id = **********
 aws_secret_access_key = **********
-aws_region = ********
 [profile_3]
 aws_access_key_id = **********
 aws_secret_access_key = **********

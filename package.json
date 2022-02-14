@@ -1,6 +1,6 @@
 {
   "name": "aspd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Amazon Switch Profile Default - simple cli for switchin between aws profiles through the [default] credential section. ",
   "main": "index.js",
   "bin": "index.js",
@@ -10,6 +10,7 @@
   },
   "author": "tesslime",
   "license": "ISC",
+  "keywords": ["cli", "aws", "asp", "aws-profile"],
   "dependencies": {
     "inquirer": "^8.2.0",
     "nanospinner": "^1.0.0",
