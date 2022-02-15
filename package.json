@@ -10,8 +10,14 @@
   },
   "author": "tesslime",
   "license": "ISC",
-  "keywords": ["cli", "aws", "asp", "aws-profile"],
+  "keywords": [
+    "cli",
+    "aws",
+    "asp",
+    "aws-profile"
+  ],
   "dependencies": {
+    "chalk": "^5.0.0",
     "inquirer": "^8.2.0",
     "nanospinner": "^1.0.0",
     "properties-reader": "^2.2.0"
