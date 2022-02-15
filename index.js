@@ -3,6 +3,7 @@
 import propertiesReader from 'properties-reader';
 import inquirer from 'inquirer';
 import { createSpinner } from "nanospinner";
+import chalk from "chalk";
 
 const sleep = (ms = 1000) => new Promise((r) => setTimeout(r, ms));
 const credentials = propertiesReader(`${process.env.HOME}/.aws/credentials`);
@@ -39,7 +40,7 @@ async function handleAnswer(profile) {
     credentials.set(`default.aws_secret_access_key`, awsSecretAccessKey);
     awsaRegion ? credentials.set(`default.aws_region`, awsaRegion): credentials.set(`default.aws_region`, '');
     await credentials.save(`${process.env.HOME}/.aws/credentials`);
-    spinner.success({text:`Default profile switched to ${profile}`});
+    spinner.success({text:`Default profile switched to [${chalk.greenBright(profile)}]`});
 }
 
 console.clear();

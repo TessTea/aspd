@@ -27,7 +27,7 @@ npm install -g aspd
 
   
 
-At the first place your ~/.aws/credentials file should have the structure similar to this:
+At the first place your ~/.aws/credentials file should have the structure similar to this(aws_region field is optional):
 
   
 
