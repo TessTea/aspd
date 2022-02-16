@@ -27,26 +27,34 @@ npm install -g aspd
 
   
 
-At the first place your ~/.aws/credentials file should have the structure similar to this(aws_region field is optional):
-
-  
+At the first place your ~/.aws/credentials file should have the structure similar to this:
 
 ```ini
 [default]
 aws_access_key_id = **********
 aws_secret_access_key = **********
-aws_region = ********
 [profile_1]
 aws_access_key_id = **********
 aws_secret_access_key = **********
-aws_region = ********
 [profile_2]
 aws_access_key_id = **********
 aws_secret_access_key = **********
 [profile_3]
 aws_access_key_id = **********
 aws_secret_access_key = **********
-aws_region = ********
+```
+
+If you have an ~/.aws/config file its struct assums to be like this:
+
+```ini
+[default]
+region = ********
+[profile_1]
+region = ********
+[profile_2]
+region = ********
+[profile_3]
+region = ********
 ```
 
 ```shell
@@ -61,6 +69,9 @@ Then just choose profile that you want to use as default.
 
 ## !!! Reminder !!:
 
-  
 
 Your default profile will be rewriten with the chosen one, so don't forget to save it if you need.
+
+## TODO:
+
+- Use AWS_CONFIG_FILE & AWS_SHARED_CREDENTIALS_FILE env variables as an alternative files paths. 
