@@ -110,7 +110,7 @@ async function addProfile() {
     },
     {
         name: 'awsSecretAccessKey',
-        type: 'input',
+        type: 'password',
         message: 'Write down aws_secret_access_key for a new profile: '
     },
     {
